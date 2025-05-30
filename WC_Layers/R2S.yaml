@@ -61,7 +61,9 @@ source_info :
         - 2.00e+7
 
 file_indices: 
-    source_mesh_index : 1
+    source_mesh_indices:
+        - 0
+        - 1
     flux_spectrum_tally_id : 2
     photon_tally_id : 1
     mesh_number : 1
