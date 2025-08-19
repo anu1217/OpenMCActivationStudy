@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<materials>
+  <material depletable="true" id="3" name="W(1.0)" volume="218.92048341599275">
+    <density units="g/cm3" value="19.3"/>
+    <nuclide ao="0.0011999999999999997" name="W180"/>
+    <nuclide ao="0.26499999999999996" name="W182"/>
+    <nuclide ao="0.14309999999999998" name="W183"/>
+    <nuclide ao="0.3064" name="W184"/>
+    <nuclide ao="0.28429999999999994" name="W186"/>
+  </material>
+  <material depletable="true" id="4" name="C(1.0)" volume="219.28744914330974">
+    <density units="g/cm3" value="2.62"/>
+    <nuclide ao="0.988922" name="C12"/>
+    <nuclide ao="0.011078" name="C13"/>
+  </material>
+</materials>
