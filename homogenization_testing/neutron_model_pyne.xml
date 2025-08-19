@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<model>
+  <materials>
+    <material id="1" name="W" volume="62518217.40521248">
+      <density units="g/cm3" value="19.3"/>
+      <nuclide ao="0.0012" name="W180"/>
+      <nuclide ao="0.265" name="W182"/>
+      <nuclide ao="0.1431" name="W183"/>
+      <nuclide ao="0.3064" name="W184"/>
+      <nuclide ao="0.2843" name="W186"/>
+    </material>
+    <material id="2" name="C" volume="63146535.93593044">
+      <density units="g/cm3" value="2.62"/>
+      <nuclide ao="0.988922" name="C12"/>
+      <nuclide ao="0.011078" name="C13"/>
+    </material>
+  </materials>
+  <geometry>
+    <cell id="1" material="void" region="-1" universe="1"/>
+    <cell id="2" material="1" region="1 -2" universe="1"/>
+    <cell id="3" material="2" region="2 -3" universe="1"/>
+    <cell id="4" material="void" region="3" universe="1"/>
+    <surface coeffs="0.0 0.0 0.0 995" id="1" type="sphere"/>
+    <surface coeffs="0.0 0.0 0.0 1000" id="2" type="sphere"/>
+    <surface boundary="vacuum" coeffs="0.0 0.0 0.0 1005" id="3" type="sphere"/>
+  </geometry>
+  <settings>
+    <run_mode>fixed source</run_mode>
+    <particles>10000</particles>
+    <batches>10</batches>
+    <inactive>0</inactive>
+    <source particle="neutron" strength="1.0" type="independent">
+      <space type="point">
+        <parameters>0.0 0.0 0.0</parameters>
+      </space>
+      <energy type="discrete">
+        <parameters>14000000.0 1.0</parameters>
+      </energy>
+    </source>
+  </settings>
+</model>
